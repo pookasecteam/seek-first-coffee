@@ -1,10 +1,10 @@
 (function () {
   const drinks = [
-    { image: "/images/espresso-pull.jpeg", label: "The pull", alt: "Espresso being pulled into a cup" },
-    { image: "/images/iced-latte.jpg", label: "Iced", alt: "Iced latte in a clear cup" },
-    { image: "/images/cortado.jpg", label: "Cortado", alt: "Cortado with latte art" },
-    { image: "/images/tumbler.jpg", label: "Take it with you", alt: "Seek First branded tumbler" },
-    { image: "/images/pink-mug.jpg", label: "In the hand", alt: "Coffee in a pink mug" }
+    { image: "/images/espresso-pull.svg", label: "The pull", alt: "Espresso being pulled into a cup" },
+    { image: "/images/iced-latte.svg", label: "Iced", alt: "Iced latte in a clear cup" },
+    { image: "/images/cortado.svg", label: "Cortado", alt: "Cortado with latte art" },
+    { image: "/images/tumbler.svg", label: "Take it with you", alt: "Seek First branded tumbler" },
+    { image: "/images/pink-mug.svg", label: "In the hand", alt: "Coffee in a pink mug" }
   ];
   const menu = {
     CLASSICS: [
@@ -61,14 +61,14 @@
   }).join('');
   root.innerHTML = '<div class="page">' +
     '<div class="paper" aria-hidden="true">' +
-    '<img class="paper__wash paper__wash--1" src="/images/washes/wash-stains.png" alt="">' +
-    '<img class="paper__wash paper__wash--2" src="/images/washes/wash-spill.png" alt="">' +
-    '<img class="paper__wash paper__wash--3" src="/images/washes/wash-hills.png" alt="">' +
-    '<img class="paper__wash paper__wash--4" src="/images/washes/wash-beans.png" alt="">' +
-    '<img class="paper__wash paper__wash--5" src="/images/washes/wash-steam.png" alt="">' +
+    '<img class="paper__wash paper__wash--1" src="/images/washes/wash-stains.svg" alt="">' +
+    '<img class="paper__wash paper__wash--2" src="/images/washes/wash-spill.svg" alt="">' +
+    '<img class="paper__wash paper__wash--3" src="/images/washes/wash-hills.svg" alt="">' +
+    '<img class="paper__wash paper__wash--4" src="/images/washes/wash-beans.svg" alt="">' +
+    '<img class="paper__wash paper__wash--5" src="/images/washes/wash-steam.svg" alt="">' +
     '</div>' +
-    '<header class="hero"><img class="hero__logo" src="/images/logo-brown.jpg" alt="Seek First coffee co." width="280" height="280"><p class="hero__place">Junction City · Kansas</p></header>' +
-    '<section class="trailer" aria-label="The trailer"><figure class="trailer__frame"><img class="trailer__art" src="/images/trailer-watercolor.png" alt="Watercolor of the Seek First coffee trailer"></figure></section>' +
+    '<header class="hero"><img class="hero__logo" src="/images/logo-brown.svg" alt="Seek First coffee co." width="280" height="280"><p class="hero__place">Junction City · Kansas</p></header>' +
+    '<section class="trailer" aria-label="The trailer"><figure class="trailer__frame"><img class="trailer__art" src="/images/trailer-watercolor.svg" alt="Watercolor of the Seek First coffee trailer"></figure></section>' +
     '<section class="story"><div class="story__copy"><p class="eyebrow">Matt &amp; Annie</p><p>We park the trailer and slide the window open. That\'s the whole invitation.</p><p>Most days you\'ll find us in Junction City. Some days Manhattan. Some days Abilene. Come as you are. We\'ll make your drink, and if you come back, we\'ll remember it.</p><p>This is a small window on the side of a trailer. We hope it feels like it was waiting for you.</p></div></section>' +
     '<section class="verse" aria-label="Matthew 6:33"><blockquote class="verse__body"><p>But seek first his kingdom and his righteousness, and all these things will be given to you as well.</p><cite>Matthew 6:33</cite></blockquote></section>' +
     '<section class="gallery" aria-label="Drinks"><p class="eyebrow">from the window</p><div class="accordion-gallery" role="list" aria-label="Image accordion gallery" style="--ag-accent:#f6efe4;--ag-overlay:#2c1810;--ag-text:#f6efe4;--ag-gap:10px;--ag-radius:18px;height:520px">' + drinkHtml + '</div></section>' +
