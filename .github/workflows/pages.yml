@@ -15,9 +15,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Unpack site
+        run: |
+          mkdir -p site
+          cat payload/part-*.b64 | tr -d '\n' | base64 -d | tar -xz -C site
+          ls -la site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: site
       - id: deployment
         uses: actions/deploy-pages@v4
